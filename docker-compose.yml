@@ -21,12 +21,12 @@ services:
     environment:
       POSTGRES_DB: exchange_report_db
       POSTGRES_USER: postgres_admin
-      POSTGRES_PASSWORD: ${POSTGRES_ADMIN_PASSWORD}
+      POSTGRES_PASSWORD: padmin122
     ports:
       - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ./database/postgres/init:/docker-entrypoint-initdb.d
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d
     healthcheck:
       test:
         [

@@ -5,6 +5,6 @@
 
 CREATE SCHEMA IF NOT EXISTS trading_reports_store AUTHORIZATION postgres_admin;
 
-GRANT USAGE ON SCHEMA trading_reports_store TO trading_report_store_user;
+GRANT CREATE, USAGE ON SCHEMA trading_reports_store TO trading_report_store_user;
 
 
